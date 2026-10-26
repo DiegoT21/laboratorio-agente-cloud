@@ -6,7 +6,7 @@ class TestTasks(unittest.TestCase):
     def test_agregar_tarea(self):
         tareas = []
         tarea = agregar_tarea(tareas, "Leer documentación", "  Estudio  ")
-        self.assertEqual(tarea["titulo"], "Leer documentación", "  Estudio  ")
+        self.assertEqual(tarea["titulo"], "Leer documentación")
         self.assertEqual(tarea["categoria"], "Estudio")
         self.assertFalse(tarea["completada"])
 
